@@ -1,0 +1,53 @@
+.sidebar {
+  height: 902px;
+  width: 319px;
+  display: flex;
+  flex-direction: column;
+  background-color: #202124;
+  border-right: 1px solid #525355;
+}
+
+.celula {
+  height: 60px;
+  width: 290px;
+  display: flex;
+  margin-top: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #868686;
+}
+
+.celula_ativa {
+  height: 60px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #C0AE50;
+}
+
+.text_frame {
+  height: 50px;
+  width: 100px;
+}
+
+.celula_texto {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  margin: auto;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.celula_icon {
+  margin-top: 9px;
+  margin-right: 10px;
+}
+
+

@@ -1,0 +1,14 @@
+<div class="main">
+
+  <button class="criarnota" routerLink="/criarnota">
+    <p class="criarnota_text">Criar nota</p> <img src="../../../assets/imagens/addnota.svg" alt="Criarnota">
+  </button>
+
+  <div class="vazio_container">
+    <p class="text_vazio">As notas que você criar irão aparecer aqui.</p> <img src="../../../assets/imagens/notasvazias.svg" alt="NotasVazias" class="notasvazias">
+  </div>
+</div>
+
+<div *ngFor="let nota of listaNotas">
+  <app-nota [nota]="nota"></app-nota>
+</div>

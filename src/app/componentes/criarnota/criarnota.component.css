@@ -1,0 +1,11 @@
+.frame {
+  display: flex;
+  height: 300px;
+  width: 300px;
+  background-color: red;
+}
+
+.criar_nota {
+  height: 50px;
+  width: 50px;
+}
