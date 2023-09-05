@@ -4,11 +4,15 @@
     <p class="criarnota_text">Criar nota</p> <img src="../../../assets/imagens/addnota.svg" alt="Criarnota">
   </button>
 
-  <div class="vazio_container">
-    <p class="text_vazio">As notas que você criar irão aparecer aqui.</p> <img src="../../../assets/imagens/notasvazias.svg" alt="NotasVazias" class="notasvazias">
-  </div>
+  <ng-template #semNotas>
+    <div class="vazio_container">
+      <p class="text_vazio">As notas que você criar irão aparecer aqui.</p> <img src="../../../assets/imagens/notasvazias.svg" alt="NotasVazias" class="notasvazias">
+    </div>
+  </ng-template>
+
+<div *ngIf="listaNotas.length> 0, else semNotas" >
+   <div *ngFor="let nota of listaNotas">
+    <app-nota [nota]="nota"></app-nota>
+   </div>
 </div>
 
-<div *ngFor="let nota of listaNotas">
-  <app-nota [nota]="nota"></app-nota>
-</div>
