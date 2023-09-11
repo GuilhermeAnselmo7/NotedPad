@@ -9,7 +9,7 @@
       <p class="text_vazio">As notas que você criar irão aparecer aqui.</p> <img src="../../../assets/imagens/notasvazias.svg" alt="NotasVazias" class="notasvazias">
     </div>
   </ng-template>
-
+  
 <div *ngIf="listaNotas.length> 0, else semNotas" >
    <div *ngFor="let nota of listaNotas">
     <app-nota [nota]="nota"></app-nota>

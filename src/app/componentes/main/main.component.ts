@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Nota } from '../nota';
 
 @Component({
   selector: 'app-main',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
-  listaNotas = [
+  listaNotas:Nota [] = [
     {
       titulo: "Titulo",
       conteudo: "Texto",
