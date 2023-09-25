@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Nota } from '../nota';
+import { NotaService } from '../nota.service';
 
 @Component({
   selector: 'app-main',
@@ -7,6 +8,13 @@ import { Nota } from '../nota';
   styleUrls: ['./main.component.css']
 })
 export class MainComponent {
+
+  constructor(private service: NotaService) { }
+
+  ngOnInit(): void {
+    this.service.listar()
+  }
+
   listaNotas:Nota [] = [
     {
       titulo: "Titulo",
