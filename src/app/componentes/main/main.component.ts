@@ -12,14 +12,10 @@ export class MainComponent {
   constructor(private service: NotaService) { }
 
   ngOnInit(): void {
-    this.service.listar()
+    this.service.listar().subscribe((listaNotas) => {
+      this.listaNotas = listaNotas
+    })
   }
 
-  listaNotas:Nota [] = [
-    {
-      titulo: "Titulo",
-      conteudo: "Texto",
-      tipo: "tipo",
-    }
-  ]
+  listaNotas:Nota [] = []
 }
