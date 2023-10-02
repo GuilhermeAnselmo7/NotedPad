@@ -9,6 +9,7 @@ import { SidebarComponent } from './componentes/sidebar/sidebar.component';
 import { CriarnotaComponent } from './componentes/criarnota/criarnota.component';
 import { NotaComponent } from './componentes/nota/nota.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

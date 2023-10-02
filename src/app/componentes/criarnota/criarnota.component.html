@@ -4,9 +4,11 @@
 
   </button>
 
-  <input type="text">
+  <input type="text" [(ngModel)]="nota.titulo">
 
-  <button class="criar_nota">
+  <input type="text" [(ngModel)]="nota.conteudo"> Conteudo
+
+  <button (click)="criarNota()" class="criar_nota">
 
   </button>
 
