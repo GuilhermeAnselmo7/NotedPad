@@ -1,12 +1,23 @@
 .frame {
+  height: 902px;
+  width: 1544px;
   display: flex;
-  height: 300px;
-  width: 300px;
-  background-color: red;
+  flex-direction: column;
+  background-color: #202124;
 }
 
 .criar_nota {
   height: 50px;
   width: 50px;
   background-color: green;
+}
+
+.inserir_titulo {
+  width: 300px;
+  height: 25px;
+}
+
+.inserir_nota {
+  width: 300px;
+  height: 25px;
 }

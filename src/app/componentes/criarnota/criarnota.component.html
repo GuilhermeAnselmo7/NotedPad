@@ -1,15 +1,13 @@
-<div class="frame">
+HTML - CRIAR NOTA <div class="frame">
 
   <button class="exit">
 
   </button>
 
-  <input type="text" [(ngModel)]="nota.titulo">
+  <input class="inserir_titulo" type="text" [(ngModel)]="nota.titulo">
 
-  <input type="text" [(ngModel)]="nota.conteudo"> Conteudo
+  <input class="inserir_nota" type="text" [(ngModel)]="nota.conteudo">
 
-  <button (click)="criarNota()" class="criar_nota">
-
-  </button>
+  <button class="criar" (click)="criarNota()" class="criar_nota">Criar</button>
 
 </div>

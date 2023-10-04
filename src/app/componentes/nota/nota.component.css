@@ -1,5 +1,21 @@
 .tipo1 {
   height: 300px;
   width: 300px;
-  background-color: white;
+  background-color: Khaki;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Itim', cursive;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  font-family: 'Itim', cursive;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-left: 12px;
 }

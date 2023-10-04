@@ -1,6 +1,6 @@
 .main {
   height: 902px;
-  width: 1000px;
+  width: 1544px;
   display: flex;
   align-items: center;
   background-color: #202124;
@@ -34,7 +34,7 @@
   height: 400px;
   margin: auto;
   margin-right: 240px;
-  
+
 }
 
 .text_vazio {
@@ -47,4 +47,8 @@
 .notasvazias {
   width: 400px;
   height: 400px;
+}
+
+.nota {
+  margin-top: 1000px;
 }
